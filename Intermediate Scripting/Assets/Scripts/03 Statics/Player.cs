@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public static int playerCount = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        Player myPlayer = new Player();
-
-        myPlayer.Experience = 5;
-        int x = myPlayer.Experience;
+        playerCount++;
     }
 }
